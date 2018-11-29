@@ -57,7 +57,7 @@ def data_loader(label_indices,
 	    im = cv2.resize(im, (input_image_size[1], input_image_size[0]))
 	    data.train.X[count, :, :, :] = im - channel_means
 	    
-	    class_name = im_paths[index].split('\\')[-2]
+	    class_name = im_paths[index].split('/')[-2]
 	    data.train.y[count, label_indices[class_name]] = 1
 	    
 	for count, index in enumerate(testing_indices):
@@ -65,7 +65,7 @@ def data_loader(label_indices,
 	    im = cv2.resize(im, (input_image_size[1], input_image_size[0]))
 	    data.test.X[count, :, :, :] = im - channel_means
 	    
-	    class_name = im_paths[index].split('\\')[-2]
+	    class_name = im_paths[index].split('/')[-2]
 	    data.test.y[count, label_indices[class_name]] = 1
 
 	print('Loaded', str(len(training_indices)), 'training examples and ', 
