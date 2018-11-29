@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!-- saved from url=(0137)https://yp1pkhwzqek-colab.googleusercontent.com/v2/usercontent/8b5e8f2bbe60490e/outputframe.html?vrz=colab-20181127-085327-RC00_222998894 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+  // Avoid => literals to stay ES6 compatible for the sake of googlebot.
+  window.addEventListener('message', function(message)  {
+    if (message.source != window.parent) {
+      return;
+    }
+    if (message.data.sandboxed_iframe_evaluation) {
+      // Message is available in scope so evaluated script can get params from
+      // it.
+      window.currentMessage = message;
+      eval.call(null, message.data.sandboxed_iframe_evaluation);
+      delete window.currentMessage;
+    }
+  });
+</script>
+<!--<base href="https://localhost:8080/">--><base href="."><link rel="stylesheet" href="./outputframe.css"></head><body><div id="output-area"><span id="output-header"> </span><div id="output-body"><div class="stream output-id-337"><div class="output_subarea output_text"><pre>INFO:tensorflow:Summary name conv5/weights:0/gradient is illegal; using conv5/weights_0/gradient instead.
+INFO:tensorflow:Summary name conv5/biases:0/gradient is illegal; using conv5/biases_0/gradient instead.
+INFO:tensorflow:Summary name fc_1/kernel:0/gradient is illegal; using fc_1/kernel_0/gradient instead.
+INFO:tensorflow:Summary name fc_1/bias:0/gradient is illegal; using fc_1/bias_0/gradient instead.
+INFO:tensorflow:Summary name fc_2/kernel:0/gradient is illegal; using fc_2/kernel_0/gradient instead.
+INFO:tensorflow:Summary name fc_2/bias:0/gradient is illegal; using fc_2/bias_0/gradient instead.
+INFO:tensorflow:Summary name fc_3/kernel:0/gradient is illegal; using fc_3/kernel_0/gradient instead.
+INFO:tensorflow:Summary name fc_3/bias:0/gradient is illegal; using fc_3/bias_0/gradient instead.
+INFO:tensorflow:Summary name output/kernel:0/gradient is illegal; using output/kernel_0/gradient instead.
+INFO:tensorflow:Summary name output/bias:0/gradient is illegal; using output/bias_0/gradient instead.
+INFO:tensorflow:Summary name conv5/weights:0 is illegal; using conv5/weights_0 instead.
+INFO:tensorflow:Summary name conv5/biases:0 is illegal; using conv5/biases_0 instead.
+INFO:tensorflow:Summary name fc_1/kernel:0 is illegal; using fc_1/kernel_0 instead.
+INFO:tensorflow:Summary name fc_1/bias:0 is illegal; using fc_1/bias_0 instead.
+INFO:tensorflow:Summary name fc_2/kernel:0 is illegal; using fc_2/kernel_0 instead.
+INFO:tensorflow:Summary name fc_2/bias:0 is illegal; using fc_2/bias_0 instead.
+INFO:tensorflow:Summary name fc_3/kernel:0 is illegal; using fc_3/kernel_0 instead.
+INFO:tensorflow:Summary name fc_3/bias:0 is illegal; using fc_3/bias_0 instead.
+INFO:tensorflow:Summary name output/kernel:0 is illegal; using output/kernel_0 instead.
+INFO:tensorflow:Summary name output/bias:0 is illegal; using output/bias_0 instead.
+Loaded 1200 training examples and  515 testing examples. 
+Loading  conv3  values...
+Loading  conv2  values...
+Loading  conv1  values...
+Loading  conv5  values...
+Loading  conv4  values...
+2018-11-29 01:54:09.721773 Start training...
+2018-11-29 01:54:09.722265 Open Tensorboard at --logdir tf_data/sample_model
+0  iterations, 0 epochs, train accuracy =  0.625 , test accuracy =  0.40625
+5  iterations, 0 epochs, train accuracy =  0.5 , test accuracy =  0.5625
+10  iterations, 0 epochs, train accuracy =  0.71875 , test accuracy =  0.625
+15  iterations, 0 epochs, train accuracy =  0.59375 , test accuracy =  0.4375
+20  iterations, 0 epochs, train accuracy =  0.5625 , test accuracy =  0.59375
+25  iterations, 0 epochs, train accuracy =  0.6875 , test accuracy =  0.71875
+30  iterations, 0 epochs, train accuracy =  0.75 , test accuracy =  0.625
+35  iterations, 0 epochs, train accuracy =  0.5 , test accuracy =  0.75
+40  iterations, 1 epochs, train accuracy =  0.5 , test accuracy =  0.5
+45  iterations, 1 epochs, train accuracy =  0.40625 , test accuracy =  0.4375
+50  iterations, 1 epochs, train accuracy =  0.5 , test accuracy =  0.3125
+55  iterations, 1 epochs, train accuracy =  0.46875 , test accuracy =  0.375
+60  iterations, 1 epochs, train accuracy =  0.625 , test accuracy =  0.625
+65  iterations, 1 epochs, train accuracy =  0.65625 , test accuracy =  0.78125
+70  iterations, 1 epochs, train accuracy =  0.8125 , test accuracy =  0.75
+75  iterations, 2 epochs, train accuracy =  0.78125 , test accuracy =  0.75
+80  iterations, 2 epochs, train accuracy =  0.6875 , test accuracy =  0.78125
+85  iterations, 2 epochs, train accuracy =  0.78125 , test accuracy =  0.65625
+90  iterations, 2 epochs, train accuracy =  0.65625 , test accuracy =  0.6875
+95  iterations, 2 epochs, train accuracy =  0.625 , test accuracy =  0.5625
+100  iterations, 2 epochs, train accuracy =  0.75 , test accuracy =  0.5625
+2018-11-29 01:56:06.969672 Saving checkpoint of model...
+2018-11-29 01:56:08.056048 Model checkpoint saved at tf_data/sample_model/model_epoch2.ckpt
+105  iterations, 2 epochs, train accuracy =  0.65625 , test accuracy =  0.59375
+110  iterations, 3 epochs, train accuracy =  0.78125 , test accuracy =  0.65625
+115  iterations, 3 epochs, train accuracy =  0.625 , test accuracy =  0.78125
+120  iterations, 3 epochs, train accuracy =  0.78125 , test accuracy =  0.65625
+125  iterations, 3 epochs, train accuracy =  0.65625 , test accuracy =  0.75
+130  iterations, 3 epochs, train accuracy =  0.75 , test accuracy =  0.8125
+135  iterations, 3 epochs, train accuracy =  0.8125 , test accuracy =  0.46875
+140  iterations, 3 epochs, train accuracy =  0.65625 , test accuracy =  0.78125
+145  iterations, 3 epochs, train accuracy =  0.71875 , test accuracy =  0.78125
+150  iterations, 4 epochs, train accuracy =  0.71875 , test accuracy =  0.65625
+155  iterations, 4 epochs, train accuracy =  0.5625 , test accuracy =  0.8125
+160  iterations, 4 epochs, train accuracy =  0.65625 , test accuracy =  0.625
+165  iterations, 4 epochs, train accuracy =  0.78125 , test accuracy =  0.75
+170  iterations, 4 epochs, train accuracy =  0.65625 , test accuracy =  0.75
+175  iterations, 4 epochs, train accuracy =  0.78125 , test accuracy =  0.5625
+180  iterations, 4 epochs, train accuracy =  0.59375 , test accuracy =  0.65625
+185  iterations, 5 epochs, train accuracy =  0.6875 , test accuracy =  0.8125
+190  iterations, 5 epochs, train accuracy =  0.65625 , test accuracy =  0.625
+195  iterations, 5 epochs, train accuracy =  0.6875 , test accuracy =  0.59375
+200  iterations, 5 epochs, train accuracy =  0.875 , test accuracy =  0.59375
+2018-11-29 01:57:56.735423 Saving checkpoint of model...
+2018-11-29 01:57:57.183288 Model checkpoint saved at tf_data/sample_model/model_epoch5.ckpt
+205  iterations, 5 epochs, train accuracy =  0.6875 , test accuracy =  0.71875
+210  iterations, 5 epochs, train accuracy =  0.78125 , test accuracy =  0.8125
+215  iterations, 5 epochs, train accuracy =  0.71875 , test accuracy =  0.75
+220  iterations, 5 epochs, train accuracy =  0.84375 , test accuracy =  0.71875
+225  iterations, 6 epochs, train accuracy =  0.6875 , test accuracy =  0.78125
+230  iterations, 6 epochs, train accuracy =  0.75 , test accuracy =  0.65625
+235  iterations, 6 epochs, train accuracy =  0.875 , test accuracy =  0.65625
+240  iterations, 6 epochs, train accuracy =  0.6875 , test accuracy =  0.625
+245  iterations, 6 epochs, train accuracy =  0.5625 , test accuracy =  0.78125
+250  iterations, 6 epochs, train accuracy =  0.71875 , test accuracy =  0.6875
+255  iterations, 6 epochs, train accuracy =  0.75 , test accuracy =  0.6875
+260  iterations, 7 epochs, train accuracy =  0.75 , test accuracy =  0.75
+265  iterations, 7 epochs, train accuracy =  0.78125 , test accuracy =  0.53125
+270  iterations, 7 epochs, train accuracy =  0.6875 , test accuracy =  0.6875
+275  iterations, 7 epochs, train accuracy =  0.71875 , test accuracy =  0.59375
+280  iterations, 7 epochs, train accuracy =  0.65625 , test accuracy =  0.75
+285  iterations, 7 epochs, train accuracy =  0.6875 , test accuracy =  0.75
+290  iterations, 7 epochs, train accuracy =  0.71875 , test accuracy =  0.71875
+295  iterations, 8 epochs, train accuracy =  0.71875 , test accuracy =  0.71875
+300  iterations, 8 epochs, train accuracy =  0.8125 , test accuracy =  0.78125
+2018-11-29 01:59:45.746200 Saving checkpoint of model...
+2018-11-29 01:59:46.083143 Model checkpoint saved at tf_data/sample_model/model_epoch8.ckpt
+305  iterations, 8 epochs, train accuracy =  0.65625 , test accuracy =  0.65625
+310  iterations, 8 epochs, train accuracy =  0.84375 , test accuracy =  0.8125
+315  iterations, 8 epochs, train accuracy =  0.78125 , test accuracy =  0.6875
+320  iterations, 8 epochs, train accuracy =  0.71875 , test accuracy =  0.5625
+325  iterations, 8 epochs, train accuracy =  0.71875 , test accuracy =  0.75
+330  iterations, 8 epochs, train accuracy =  0.8125 , test accuracy =  0.65625
+335  iterations, 9 epochs, train accuracy =  0.6875 , test accuracy =  0.8125
+340  iterations, 9 epochs, train accuracy =  0.625 , test accuracy =  0.75
+345  iterations, 9 epochs, train accuracy =  0.75 , test accuracy =  0.75
+350  iterations, 9 epochs, train accuracy =  0.75 , test accuracy =  0.625
+355  iterations, 9 epochs, train accuracy =  0.625 , test accuracy =  0.65625
+360  iterations, 9 epochs, train accuracy =  0.78125 , test accuracy =  0.65625
+365  iterations, 9 epochs, train accuracy =  0.65625 , test accuracy =  0.78125
+370  iterations, 10 epochs, train accuracy =  0.78125 , test accuracy =  0.6875
+375  iterations, 10 epochs, train accuracy =  0.71875 , test accuracy =  0.6875
+380  iterations, 10 epochs, train accuracy =  0.71875 , test accuracy =  0.71875
+385  iterations, 10 epochs, train accuracy =  0.875 , test accuracy =  0.5625
+390  iterations, 10 epochs, train accuracy =  0.8125 , test accuracy =  0.6875
+395  iterations, 10 epochs, train accuracy =  0.625 , test accuracy =  0.5625
+400  iterations, 10 epochs, train accuracy =  0.71875 , test accuracy =  0.65625
+2018-11-29 02:01:34.328906 Saving checkpoint of model...
+2018-11-29 02:01:34.682806 Model checkpoint saved at tf_data/sample_model/model_epoch10.ckpt
+405  iterations, 10 epochs, train accuracy =  0.6875 , test accuracy =  0.84375
+410  iterations, 11 epochs, train accuracy =  0.625 , test accuracy =  0.75
+415  iterations, 11 epochs, train accuracy =  0.6875 , test accuracy =  0.71875
+420  iterations, 11 epochs, train accuracy =  0.8125 , test accuracy =  0.6875
+425  iterations, 11 epochs, train accuracy =  0.71875 , test accuracy =  0.71875
+430  iterations, 11 epochs, train accuracy =  0.875 , test accuracy =  0.75
+435  iterations, 11 epochs, train accuracy =  0.8125 , test accuracy =  0.84375
+440  iterations, 11 epochs, train accuracy =  0.96875 , test accuracy =  0.875
+445  iterations, 12 epochs, train accuracy =  0.84375 , test accuracy =  0.875
+450  iterations, 12 epochs, train accuracy =  0.90625 , test accuracy =  0.875
+455  iterations, 12 epochs, train accuracy =  0.9375 , test accuracy =  0.9375
+460  iterations, 12 epochs, train accuracy =  0.875 , test accuracy =  0.84375
+465  iterations, 12 epochs, train accuracy =  0.8125 , test accuracy =  0.75
+470  iterations, 12 epochs, train accuracy =  0.78125 , test accuracy =  0.65625
+475  iterations, 12 epochs, train accuracy =  0.84375 , test accuracy =  0.8125
+480  iterations, 13 epochs, train accuracy =  0.9375 , test accuracy =  0.8125
+485  iterations, 13 epochs, train accuracy =  0.75 , test accuracy =  0.84375
+490  iterations, 13 epochs, train accuracy =  0.6875 , test accuracy =  0.625
+495  iterations, 13 epochs, train accuracy =  0.75 , test accuracy =  0.4375
+500  iterations, 13 epochs, train accuracy =  0.59375 , test accuracy =  0.5
+2018-11-29 02:03:23.666717 Saving checkpoint of model...
+2018-11-29 02:03:24.002205 Model checkpoint saved at tf_data/sample_model/model_epoch13.ckpt
+505  iterations, 13 epochs, train accuracy =  0.71875 , test accuracy =  0.5625
+510  iterations, 13 epochs, train accuracy =  0.40625 , test accuracy =  0.375
+515  iterations, 13 epochs, train accuracy =  0.4375 , test accuracy =  0.375
+520  iterations, 14 epochs, train accuracy =  0.46875 , test accuracy =  0.375
+525  iterations, 14 epochs, train accuracy =  0.40625 , test accuracy =  0.34375
+530  iterations, 14 epochs, train accuracy =  0.4375 , test accuracy =  0.34375
+535  iterations, 14 epochs, train accuracy =  0.40625 , test accuracy =  0.34375
+540  iterations, 14 epochs, train accuracy =  0.34375 , test accuracy =  0.25
+545  iterations, 14 epochs, train accuracy =  0.375 , test accuracy =  0.46875
+550  iterations, 14 epochs, train accuracy =  0.25 , test accuracy =  0.3125
+555  iterations, 15 epochs, train accuracy =  0.34375 , test accuracy =  0.25
+560  iterations, 15 epochs, train accuracy =  0.46875 , test accuracy =  0.375
+565  iterations, 15 epochs, train accuracy =  0.40625 , test accuracy =  0.3125
+570  iterations, 15 epochs, train accuracy =  0.3125 , test accuracy =  0.3125
+575  iterations, 15 epochs, train accuracy =  0.40625 , test accuracy =  0.375
+580  iterations, 15 epochs, train accuracy =  0.375 , test accuracy =  0.3125
+585  iterations, 15 epochs, train accuracy =  0.53125 , test accuracy =  0.53125
+590  iterations, 15 epochs, train accuracy =  0.375 , test accuracy =  0.40625
+595  iterations, 16 epochs, train accuracy =  0.375 , test accuracy =  0.1875
+600  iterations, 16 epochs, train accuracy =  0.3125 , test accuracy =  0.25
+2018-11-29 02:05:11.331099 Saving checkpoint of model...
+2018-11-29 02:05:11.713551 Model checkpoint saved at tf_data/sample_model/model_epoch16.ckpt
+605  iterations, 16 epochs, train accuracy =  0.34375 , test accuracy =  0.34375
+610  iterations, 16 epochs, train accuracy =  0.40625 , test accuracy =  0.375
+615  iterations, 16 epochs, train accuracy =  0.3125 , test accuracy =  0.25
+620  iterations, 16 epochs, train accuracy =  0.40625 , test accuracy =  0.34375
+625  iterations, 16 epochs, train accuracy =  0.40625 , test accuracy =  0.4375
+630  iterations, 17 epochs, train accuracy =  0.34375 , test accuracy =  0.3125
+635  iterations, 17 epochs, train accuracy =  0.34375 , test accuracy =  0.40625
+640  iterations, 17 epochs, train accuracy =  0.3125 , test accuracy =  0.34375
+645  iterations, 17 epochs, train accuracy =  0.5 , test accuracy =  0.21875
+650  iterations, 17 epochs, train accuracy =  0.5 , test accuracy =  0.40625
+655  iterations, 17 epochs, train accuracy =  0.28125 , test accuracy =  0.34375
+660  iterations, 17 epochs, train accuracy =  0.15625 , test accuracy =  0.53125
+665  iterations, 18 epochs, train accuracy =  0.25 , test accuracy =  0.375
+670  iterations, 18 epochs, train accuracy =  0.21875 , test accuracy =  0.34375
+675  iterations, 18 epochs, train accuracy =  0.3125 , test accuracy =  0.34375
+680  iterations, 18 epochs, train accuracy =  0.34375 , test accuracy =  0.3125
+685  iterations, 18 epochs, train accuracy =  0.28125 , test accuracy =  0.3125
+690  iterations, 18 epochs, train accuracy =  0.34375 , test accuracy =  0.375
+695  iterations, 18 epochs, train accuracy =  0.375 , test accuracy =  0.34375
+700  iterations, 18 epochs, train accuracy =  0.375 , test accuracy =  0.3125
+2018-11-29 02:06:58.156088 Saving checkpoint of model...
+2018-11-29 02:06:58.535315 Model checkpoint saved at tf_data/sample_model/model_epoch18.ckpt
+705  iterations, 19 epochs, train accuracy =  0.34375 , test accuracy =  0.34375
+710  iterations, 19 epochs, train accuracy =  0.5 , test accuracy =  0.5
+715  iterations, 19 epochs, train accuracy =  0.5 , test accuracy =  0.46875
+720  iterations, 19 epochs, train accuracy =  0.375 , test accuracy =  0.46875
+725  iterations, 19 epochs, train accuracy =  0.4375 , test accuracy =  0.46875
+730  iterations, 19 epochs, train accuracy =  0.5 , test accuracy =  0.375
+735  iterations, 19 epochs, train accuracy =  0.40625 , test accuracy =  0.28125
+740  iterations, 20 epochs, train accuracy =  0.4375 , test accuracy =  0.40625
+745  iterations, 20 epochs, train accuracy =  0.46875 , test accuracy =  0.46875
+750  iterations, 20 epochs, train accuracy =  0.4375 , test accuracy =  0.53125
+755  iterations, 20 epochs, train accuracy =  0.28125 , test accuracy =  0.46875
+760  iterations, 20 epochs, train accuracy =  0.46875 , test accuracy =  0.4375
+765  iterations, 20 epochs, train accuracy =  0.5 , test accuracy =  0.40625
+770  iterations, 20 epochs, train accuracy =  0.375 , test accuracy =  0.25
+775  iterations, 20 epochs, train accuracy =  0.5 , test accuracy =  0.46875
+780  iterations, 21 epochs, train accuracy =  0.5 , test accuracy =  0.46875
+785  iterations, 21 epochs, train accuracy =  0.34375 , test accuracy =  0.34375
+790  iterations, 21 epochs, train accuracy =  0.375 , test accuracy =  0.46875
+795  iterations, 21 epochs, train accuracy =  0.65625 , test accuracy =  0.34375
+800  iterations, 21 epochs, train accuracy =  0.3125 , test accuracy =  0.5
+2018-11-29 02:08:45.963212 Saving checkpoint of model...
+2018-11-29 02:08:46.351568 Model checkpoint saved at tf_data/sample_model/model_epoch21.ckpt
+805  iterations, 21 epochs, train accuracy =  0.5 , test accuracy =  0.34375
+810  iterations, 21 epochs, train accuracy =  0.40625 , test accuracy =  0.46875
+815  iterations, 22 epochs, train accuracy =  0.375 , test accuracy =  0.5625
+820  iterations, 22 epochs, train accuracy =  0.40625 , test accuracy =  0.375
+825  iterations, 22 epochs, train accuracy =  0.34375 , test accuracy =  0.3125
+830  iterations, 22 epochs, train accuracy =  0.65625 , test accuracy =  0.53125
+835  iterations, 22 epochs, train accuracy =  0.78125 , test accuracy =  0.8125
+840  iterations, 22 epochs, train accuracy =  0.8125 , test accuracy =  0.5625
+845  iterations, 22 epochs, train accuracy =  0.53125 , test accuracy =  0.28125
+850  iterations, 23 epochs, train accuracy =  0.8125 , test accuracy =  0.84375
+855  iterations, 23 epochs, train accuracy =  0.75 , test accuracy =  0.71875
+860  iterations, 23 epochs, train accuracy =  0.46875 , test accuracy =  0.53125
+865  iterations, 23 epochs, train accuracy =  0.65625 , test accuracy =  0.65625
+870  iterations, 23 epochs, train accuracy =  0.5625 , test accuracy =  0.5625
+875  iterations, 23 epochs, train accuracy =  0.5 , test accuracy =  0.6875
+880  iterations, 23 epochs, train accuracy =  0.84375 , test accuracy =  0.59375
+885  iterations, 23 epochs, train accuracy =  0.6875 , test accuracy =  0.5
+890  iterations, 24 epochs, train accuracy =  0.84375 , test accuracy =  0.625
+895  iterations, 24 epochs, train accuracy =  0.71875 , test accuracy =  0.6875
+900  iterations, 24 epochs, train accuracy =  0.59375 , test accuracy =  0.625
+2018-11-29 02:10:34.545305 Saving checkpoint of model...
+2018-11-29 02:10:34.914588 Model checkpoint saved at tf_data/sample_model/model_epoch24.ckpt
+905  iterations, 24 epochs, train accuracy =  0.75 , test accuracy =  0.65625
+910  iterations, 24 epochs, train accuracy =  0.78125 , test accuracy =  0.6875
+915  iterations, 24 epochs, train accuracy =  0.65625 , test accuracy =  0.84375
+920  iterations, 24 epochs, train accuracy =  0.84375 , test accuracy =  0.78125
+925  iterations, 25 epochs, train accuracy =  0.84375 , test accuracy =  0.84375
+930  iterations, 25 epochs, train accuracy =  0.75 , test accuracy =  0.65625
+935  iterations, 25 epochs, train accuracy =  0.84375 , test accuracy =  0.78125
+940  iterations, 25 epochs, train accuracy =  0.8125 , test accuracy =  0.84375
+945  iterations, 25 epochs, train accuracy =  0.84375 , test accuracy =  0.84375
+950  iterations, 25 epochs, train accuracy =  0.6875 , test accuracy =  0.59375
+955  iterations, 25 epochs, train accuracy =  0.90625 , test accuracy =  0.875
+960  iterations, 25 epochs, train accuracy =  0.8125 , test accuracy =  0.84375
+965  iterations, 26 epochs, train accuracy =  0.875 , test accuracy =  0.84375
+970  iterations, 26 epochs, train accuracy =  0.96875 , test accuracy =  0.875
+975  iterations, 26 epochs, train accuracy =  0.90625 , test accuracy =  0.9375
+980  iterations, 26 epochs, train accuracy =  0.8125 , test accuracy =  0.625
+985  iterations, 26 epochs, train accuracy =  0.875 , test accuracy =  0.84375
+990  iterations, 26 epochs, train accuracy =  0.90625 , test accuracy =  0.875
+995  iterations, 26 epochs, train accuracy =  0.9375 , test accuracy =  0.625
+1000  iterations, 27 epochs, train accuracy =  0.875 , test accuracy =  0.75
+2018-11-29 02:12:23.269959 Saving checkpoint of model...
+2018-11-29 02:12:23.663039 Model checkpoint saved at tf_data/sample_model/model_epoch27.ckpt
+1005  iterations, 27 epochs, train accuracy =  0.75 , test accuracy =  0.71875
+1010  iterations, 27 epochs, train accuracy =  0.9375 , test accuracy =  0.875
+1015  iterations, 27 epochs, train accuracy =  0.875 , test accuracy =  0.84375
+1020  iterations, 27 epochs, train accuracy =  1.0 , test accuracy =  0.90625
+1025  iterations, 27 epochs, train accuracy =  0.90625 , test accuracy =  0.75
+1030  iterations, 27 epochs, train accuracy =  0.90625 , test accuracy =  0.90625
+1035  iterations, 28 epochs, train accuracy =  0.84375 , test accuracy =  0.90625
+1040  iterations, 28 epochs, train accuracy =  0.90625 , test accuracy =  0.9375
+1045  iterations, 28 epochs, train accuracy =  0.9375 , test accuracy =  0.96875
+1050  iterations, 28 epochs, train accuracy =  0.96875 , test accuracy =  0.8125
+1055  iterations, 28 epochs, train accuracy =  0.96875 , test accuracy =  0.90625
+1060  iterations, 28 epochs, train accuracy =  0.96875 , test accuracy =  0.84375
+1065  iterations, 28 epochs, train accuracy =  0.96875 , test accuracy =  0.9375
+1070  iterations, 28 epochs, train accuracy =  0.8125 , test accuracy =  0.71875
+1075  iterations, 29 epochs, train accuracy =  0.90625 , test accuracy =  0.84375
+1080  iterations, 29 epochs, train accuracy =  0.84375 , test accuracy =  0.9375
+1085  iterations, 29 epochs, train accuracy =  0.90625 , test accuracy =  0.8125
+1090  iterations, 29 epochs, train accuracy =  0.875 , test accuracy =  0.875
+1095  iterations, 29 epochs, train accuracy =  0.90625 , test accuracy =  0.90625
+1100  iterations, 29 epochs, train accuracy =  0.875 , test accuracy =  0.71875
+2018-11-29 02:14:12.323689 Saving checkpoint of model...
+2018-11-29 02:14:12.716245 Model checkpoint saved at tf_data/sample_model/model_epoch29.ckpt
+1105  iterations, 29 epochs, train accuracy =  0.84375 , test accuracy =  0.8125
+1110  iterations, 30 epochs, train accuracy =  0.96875 , test accuracy =  0.90625
+1115  iterations, 30 epochs, train accuracy =  0.8125 , test accuracy =  0.84375
+1120  iterations, 30 epochs, train accuracy =  0.96875 , test accuracy =  0.9375
+1125  iterations, 30 epochs, train accuracy =  0.90625 , test accuracy =  0.875
+1130  iterations, 30 epochs, train accuracy =  0.84375 , test accuracy =  0.9375
+1135  iterations, 30 epochs, train accuracy =  0.90625 , test accuracy =  0.875
+1140  iterations, 30 epochs, train accuracy =  0.78125 , test accuracy =  0.8125
+1145  iterations, 30 epochs, train accuracy =  1.0 , test accuracy =  0.875
+1150  iterations, 31 epochs, train accuracy =  0.9375 , test accuracy =  0.90625
+1155  iterations, 31 epochs, train accuracy =  0.90625 , test accuracy =  0.75
+1160  iterations, 31 epochs, train accuracy =  1.0 , test accuracy =  0.90625
+1165  iterations, 31 epochs, train accuracy =  0.96875 , test accuracy =  0.9375
+1170  iterations, 31 epochs, train accuracy =  0.9375 , test accuracy =  0.90625
+1175  iterations, 31 epochs, train accuracy =  0.96875 , test accuracy =  0.90625
+1180  iterations, 31 epochs, train accuracy =  0.78125 , test accuracy =  0.78125
+1185  iterations, 32 epochs, train accuracy =  0.96875 , test accuracy =  0.6875
+1190  iterations, 32 epochs, train accuracy =  0.71875 , test accuracy =  0.6875
+1195  iterations, 32 epochs, train accuracy =  0.875 , test accuracy =  0.75
+1200  iterations, 32 epochs, train accuracy =  0.625 , test accuracy =  0.53125
+2018-11-29 02:16:01.447847 Saving checkpoint of model...
+2018-11-29 02:16:01.839257 Model checkpoint saved at tf_data/sample_model/model_epoch32.ckpt
+1205  iterations, 32 epochs, train accuracy =  0.59375 , test accuracy =  0.59375
+1210  iterations, 32 epochs, train accuracy =  0.71875 , test accuracy =  0.59375
+1215  iterations, 32 epochs, train accuracy =  0.71875 , test accuracy =  0.625
+1220  iterations, 33 epochs, train accuracy =  0.625 , test accuracy =  0.6875
+1225  iterations, 33 epochs, train accuracy =  0.78125 , test accuracy =  0.65625
+1230  iterations, 33 epochs, train accuracy =  0.65625 , test accuracy =  0.5
+1235  iterations, 33 epochs, train accuracy =  0.5 , test accuracy =  0.5625
+1240  iterations, 33 epochs, train accuracy =  0.8125 , test accuracy =  0.65625
+1245  iterations, 33 epochs, train accuracy =  0.78125 , test accuracy =  0.65625
+1250  iterations, 33 epochs, train accuracy =  0.78125 , test accuracy =  0.625
+1255  iterations, 33 epochs, train accuracy =  0.9375 , test accuracy =  0.90625
+1260  iterations, 34 epochs, train accuracy =  0.8125 , test accuracy =  0.90625
+1265  iterations, 34 epochs, train accuracy =  0.84375 , test accuracy =  0.84375
+1270  iterations, 34 epochs, train accuracy =  0.96875 , test accuracy =  0.90625
+1275  iterations, 34 epochs, train accuracy =  0.96875 , test accuracy =  0.84375
+1280  iterations, 34 epochs, train accuracy =  0.96875 , test accuracy =  0.9375
+1285  iterations, 34 epochs, train accuracy =  0.71875 , test accuracy =  0.75
+1290  iterations, 34 epochs, train accuracy =  0.59375 , test accuracy =  0.4375
+1295  iterations, 35 epochs, train accuracy =  0.78125 , test accuracy =  0.65625
+1300  iterations, 35 epochs, train accuracy =  0.84375 , test accuracy =  0.8125
+2018-11-29 02:17:49.873870 Saving checkpoint of model...
+2018-11-29 02:17:50.253172 Model checkpoint saved at tf_data/sample_model/model_epoch35.ckpt
+1305  iterations, 35 epochs, train accuracy =  0.8125 , test accuracy =  0.6875
+1310  iterations, 35 epochs, train accuracy =  0.84375 , test accuracy =  0.6875
+1315  iterations, 35 epochs, train accuracy =  0.96875 , test accuracy =  0.8125
+1320  iterations, 35 epochs, train accuracy =  0.90625 , test accuracy =  0.84375
+1325  iterations, 35 epochs, train accuracy =  0.875 , test accuracy =  0.71875
+1330  iterations, 35 epochs, train accuracy =  0.71875 , test accuracy =  0.65625
+1335  iterations, 36 epochs, train accuracy =  0.8125 , test accuracy =  0.71875
+1340  iterations, 36 epochs, train accuracy =  0.90625 , test accuracy =  0.90625
+1345  iterations, 36 epochs, train accuracy =  1.0 , test accuracy =  0.9375
+1350  iterations, 36 epochs, train accuracy =  0.8125 , test accuracy =  0.65625
+1355  iterations, 36 epochs, train accuracy =  0.78125 , test accuracy =  0.65625
+1360  iterations, 36 epochs, train accuracy =  0.625 , test accuracy =  0.6875
+1365  iterations, 36 epochs, train accuracy =  0.8125 , test accuracy =  0.75
+1370  iterations, 37 epochs, train accuracy =  0.90625 , test accuracy =  0.8125
+1375  iterations, 37 epochs, train accuracy =  0.9375 , test accuracy =  0.71875
+1380  iterations, 37 epochs, train accuracy =  0.90625 , test accuracy =  0.78125
+1385  iterations, 37 epochs, train accuracy =  0.8125 , test accuracy =  0.8125
+1390  iterations, 37 epochs, train accuracy =  0.90625 , test accuracy =  0.90625
+1395  iterations, 37 epochs, train accuracy =  0.875 , test accuracy =  0.875
+1400  iterations, 37 epochs, train accuracy =  1.0 , test accuracy =  0.90625
+2018-11-29 02:19:38.504014 Saving checkpoint of model...
+2018-11-29 02:19:38.879232 Model checkpoint saved at tf_data/sample_model/model_epoch37.ckpt
+1405  iterations, 38 epochs, train accuracy =  0.71875 , test accuracy =  0.625
+1410  iterations, 38 epochs, train accuracy =  0.75 , test accuracy =  0.625
+1415  iterations, 38 epochs, train accuracy =  0.6875 , test accuracy =  0.34375
+1420  iterations, 38 epochs, train accuracy =  0.5625 , test accuracy =  0.625
+1425  iterations, 38 epochs, train accuracy =  0.71875 , test accuracy =  0.65625
+1430  iterations, 38 epochs, train accuracy =  0.8125 , test accuracy =  0.6875
+1435  iterations, 38 epochs, train accuracy =  0.75 , test accuracy =  0.875
+1440  iterations, 38 epochs, train accuracy =  0.90625 , test accuracy =  0.78125
+1445  iterations, 39 epochs, train accuracy =  0.84375 , test accuracy =  0.875
+1450  iterations, 39 epochs, train accuracy =  0.9375 , test accuracy =  0.6875
+1455  iterations, 39 epochs, train accuracy =  0.875 , test accuracy =  0.96875
+1460  iterations, 39 epochs, train accuracy =  0.875 , test accuracy =  0.90625
+1465  iterations, 39 epochs, train accuracy =  0.90625 , test accuracy =  0.90625
+1470  iterations, 39 epochs, train accuracy =  0.96875 , test accuracy =  0.84375
+1475  iterations, 39 epochs, train accuracy =  0.96875 , test accuracy =  0.96875
+1480  iterations, 40 epochs, train accuracy =  0.9375 , test accuracy =  0.90625
+1485  iterations, 40 epochs, train accuracy =  0.96875 , test accuracy =  0.96875
+1490  iterations, 40 epochs, train accuracy =  0.96875 , test accuracy =  0.8125
+1495  iterations, 40 epochs, train accuracy =  0.8125 , test accuracy =  0.65625
+</pre></div></div></div><span id="output-footer"></span></div></body></html>
