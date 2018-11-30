@@ -51,3 +51,7 @@ events.out.tfevents.*
 ehthumbs.db
 Thumbs.db
 __MACOSX/
+
+# environment files 
+.idea* 
+.idea/*
