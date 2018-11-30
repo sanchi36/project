@@ -19,6 +19,20 @@
                         {{ form.image(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
+                <div class="form-group">
+                    {{ form.food.label(class="form-control-label") }}
+
+                    {% if form.food.errors %}
+                        {{ form.food(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.food.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.food(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
             </fieldset>
             <div class="form-group">
                 {{ form.submit(class="btn btn-outline-info") }}
@@ -26,18 +40,35 @@
         </form>
     </div>
     {% if pred %}
-        <p>Is it {{ pred.Food }}?<br>Actual: {{ actual.Food }}</p>
-        <p>Here are some facts</p>
-        <article class="media content-section">
-          <div class="media-body">
-            <div class="article-metadata">
-              <a class="mr-2" href="#">{{ pred.Food }}</a>
-              <small class="text-muted">{{ pred.SubCategory }}</small>
-            </div>
-            <h2><a class="article-title" href="#">Calories: {{ pred.Calories }}</a></h2>
-            <p class="article-content">{{ pred.Ingredients }}</p>
-          </div>
-        </article>
+        <p>You entered: {{ input }}</p>
+        {% for p in pred %}
+            <p>Is it {{ p.Food }}?</p>
+            <p>Here are some facts:</p>
+            <article class="media content-section">
+              <div class="media-body">
+                <div class="article-metadata">
+                  <a class="mr-2" href="#">{{ p.Food }}</a>
+                  <small class="text-muted">{{ p.SubCategory }}</small>
+                </div>
+                <h2><a class="article-title" href="#">Calories: {{ p.Calories }}</a></h2>
+                <p class="article-content">{{ p.Ingredients }}</p>
+              </div>
+            </article>
+        {% endfor %}
+        <hr>
+        {% for a in actual %}
+            <p>In case we got it wrong, here are actual food's facts:</p>
+            <article class="media content-section">
+              <div class="media-body">
+                <div class="article-metadata">
+                  <a class="mr-2" href="#">{{ a.Food }}</a>
+                  <small class="text-muted">{{ a.SubCategory }}</small>
+                </div>
+                <h2><a class="article-title" href="#">Calories: {{ a.Calories }}</a></h2>
+                <p class="article-content">{{ a.Ingredients }}</p>
+              </div>
+            </article>
+        {% endfor %}
     {% endif %}
 
     <hr>
