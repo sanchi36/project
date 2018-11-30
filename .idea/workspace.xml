@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7da0605-b59d-4f66-af48-c87bbec6778d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TastyStats_front-end/reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TastyStats_front-end/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/TastyStats_front-end/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TastyStats_front-end/reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/TastyStats_front-end/reader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TastyStats_front-end/tastystats.py" beforeDir="false" afterPath="$PROJECT_DIR$/TastyStats_front-end/tastystats.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TastyStats_front-end/templates/getStats.html" beforeDir="false" afterPath="$PROJECT_DIR$/TastyStats_front-end/templates/getStats.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TastyStats_front-end/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/TastyStats_front-end/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TastyStats_front-end/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/TastyStats_front-end/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/calorie_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/calorie_dataset.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,14 +58,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="482" />
-          <entry key="py" value="2300" />
+          <entry key="html" value="556" />
+          <entry key="py" value="2368" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="482" />
-          <entry key="Python" value="2300" />
+          <entry key="HTML" value="556" />
+          <entry key="Python" value="2368" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -91,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TastyStats_front-end/tastystats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+            <state relative-caret-position="89">
+              <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -130,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TastyStats_front-end/templates/getStats.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+            <state relative-caret-position="212">
+              <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -139,10 +133,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TastyStats_front-end/reader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="136">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding>
-                <marker date="1543611203950" expanded="true" signature="1071:1076" ph="..." />
+                <marker date="1543613503338" expanded="true" signature="1111:1116" ph="..." />
               </folding>
             </state>
           </provider>
@@ -151,8 +145,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TastyStats_front-end/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            <state relative-caret-position="136">
+              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -176,9 +170,9 @@
       <find>url</find>
       <find>main</find>
       <find>actual</find>
-      <find>img</find>
       <find>pred</find>
       <find>p</find>
+      <find>img</find>
       <find>unique</find>
     </findStrings>
     <replaceStrings>
@@ -199,15 +193,15 @@
         <option value="$PROJECT_DIR$/TastyStats_front-end/templates/home.html" />
         <option value="$PROJECT_DIR$/TastyStats_front-end/templates/layout.html" />
         <option value="$PROJECT_DIR$/TastyStats_front-end/forms.py" />
-        <option value="$PROJECT_DIR$/TastyStats_front-end/templates/getStats.html" />
         <option value="$PROJECT_DIR$/TastyStats_front-end/reader.py" />
+        <option value="$PROJECT_DIR$/TastyStats_front-end/templates/getStats.html" />
         <option value="$PROJECT_DIR$/TastyStats_front-end/tastystats.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="624" />
-    <option name="y" value="60" />
+    <option name="x" value="614" />
+    <option name="y" value="2" />
     <option name="width" value="754" />
     <option name="height" value="704" />
   </component>
@@ -355,15 +349,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="735" extended-state="0" />
+    <frame x="614" y="2" width="754" height="704" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19937205" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18299712" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31229237" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32924694" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -407,8 +401,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TastyStats_front-end/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        <state relative-caret-position="136">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -417,10 +411,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TastyStats_front-end/reader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        <state relative-caret-position="136">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding>
-            <marker date="1543611203950" expanded="true" signature="1071:1076" ph="..." />
+            <marker date="1543613503338" expanded="true" signature="1111:1116" ph="..." />
           </folding>
         </state>
       </provider>
@@ -434,15 +428,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TastyStats_front-end/templates/getStats.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        <state relative-caret-position="212">
+          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TastyStats_front-end/tastystats.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+        <state relative-caret-position="89">
+          <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>

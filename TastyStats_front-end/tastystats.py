@@ -9,7 +9,7 @@ uniqueFoods = []
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'da50f45e806d34c2f51f4baf9c1f7350'
 
-foods = [
+foods_dummy = [
     {
         'Food': 'Ice Cream 0',
         'FoodSubcategory': 'Sundae',
@@ -44,7 +44,6 @@ foods = [
     }
 ]
 
-
 @app.route("/")
 @app.route("/home")
 def home():
@@ -57,25 +56,19 @@ def about():
 @app.route("/explore", methods=['GET','POST'])
 @app.route("/getStats", methods=['GET','POST'])
 def getStats():
-    print("Yes, listening")
     form = getFoodForm()
     pred = {}
     act = {}
     your_input = ""
     allFoods, uniqueFoods = getFoods()
-    print("Validating form...")
     if form.validate_on_submit():
-        print(form.food.data)
         act = getSimilarFoods(form.food.data)
         your_input = form.image.data
-        print("We found", len(act), "actual foods")
         # get prediction
         # string output from our model get a string output
         #pred = {}
         pred = "Burger" # hardcoding temporarily
         pred = getSimilarFoods(pred) #get all related entries from our csv
-        print("and, we found", len(pred), "matching predictions")
-
     return render_template('getStats.html', form=form, input=your_input,
                            pred=pred, actual=act, foods=allFoods,
                            title="Ok, let's crunch the food...")
@@ -93,5 +86,4 @@ def getSimilarFoods(name):
 if __name__ == '__main__':
     if len(foods) == 0:
         foods, uniqueFoods = getFoods()
-    print("wassup")
     app.run(debug=True)

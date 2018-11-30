@@ -42,27 +42,25 @@
     {% if pred %}
         <p>You entered: {{ input }}</p>
         {% for p in pred %}
-            <p>Is it {{ p.Food }}?</p>
+            <p>Is it {{ p.SubCategory }}?</p>
             <p>Here are some facts:</p>
             <article class="media content-section">
               <div class="media-body">
                 <div class="article-metadata">
-                  <a class="mr-2" href="#">{{ p.Food }}</a>
-                  <small class="text-muted">{{ p.SubCategory }}</small>
+                  <a class="mr-2" href="#">{{ p.Food }} - {{ p.SubCategory }}</a>
                 </div>
                 <h2><a class="article-title" href="#">Calories: {{ p.Calories }}</a></h2>
-                <p class="article-content">{{ p.Ingredients }}</p>
+                <p class="article-content">Usual Ingredients: {{ p.Ingredients }}</p>
               </div>
             </article>
         {% endfor %}
         <hr>
+        <p>In case we got it wrong, here are actual food's facts:</p>
         {% for a in actual %}
-            <p>In case we got it wrong, here are actual food's facts:</p>
             <article class="media content-section">
               <div class="media-body">
                 <div class="article-metadata">
-                  <a class="mr-2" href="#">{{ a.Food }}</a>
-                  <small class="text-muted">{{ a.SubCategory }}</small>
+                  <a class="mr-2" href="#">{{ a.Food }} - {{ a.SubCategory }}</a>
                 </div>
                 <h2><a class="article-title" href="#">Calories: {{ a.Calories }}</a></h2>
                 <p class="article-content">{{ a.Ingredients }}</p>
