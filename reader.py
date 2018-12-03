@@ -4,7 +4,7 @@ import csv
 uniqueFoods = {}
 
 def processData():
-    with open('../data/calorie_dataset.csv') as csv_file:
+    with open('data/calorie_dataset.csv') as csv_file:
         # each entry in the csv file
         foods = []
 
