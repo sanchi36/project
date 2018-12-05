@@ -1,25 +1,6 @@
-##
-## Example Submission Script for Deep Learning Programming challenge.
-##
-
-import sys, os
-import numpy as np
-import tensorflow as tf
-from datetime import datetime
-
-#Local methods:
-from alexnet import AlexNet
-from data_loader import data_loader
-
-sys.path.append('../')
-from generator import Generator
-
 class Model(object):
     def __init__(self, mode = 'train'):
-        '''
-        Model class for you to modify for brick/ball/cylinder deep learning challenge.
-        mode = 'train' or 'test' - could be a useful flag if we want to use dataset augmentations. 
-        '''
+        
         if mode == 'train' or mode == 'test':
             self.mode = mode
         else:
@@ -46,7 +27,7 @@ class Model(object):
         self.save_dir = "tf_data/sample_model"
 
         self.input_image_size = (227, 227)
-        self.label_indices = {'brick': 0, 'ball': 1, 'cylinder': 2}
+        self.label_indices = {'FrenchFries': 0, 'Pizza': 1, 'VegBurger': 2, 'spaghetti':3, 'Salad':4}
         self.labels_ordered = list(self.label_indices)
         self.num_classes = len(self.label_indices)
 
@@ -92,13 +73,13 @@ class Model(object):
         fc1 = tf.layers.dense(inputs = flattened, units = 4096, activation = 'sigmoid',name = 'fc_1')
         dropout1= tf.nn.dropout(fc1,self.keep_prob,noise_shape=None,seed=None,name=None)
         
-        fc2 = tf.layers.dense(inputs = fc1, units =784, activation = 'sigmoid', name = 'fc_2')
+        fc2 = tf.layers.dense(inputs = fc1, units =1152, activation = 'sigmoid', name = 'fc_2')
         dropout2= tf.nn.dropout(fc2,self.keep_prob,noise_shape=None,seed=None,name=None)
         
-        fc3 = tf.layers.dense(inputs = fc2, units = 64, activation = 'sigmoid', name = 'fc_3')
+        fc3 = tf.layers.dense(inputs = fc2, units = 48, activation = 'sigmoid', name = 'fc_3')
         dropout3= tf.nn.dropout(fc3,self.keep_prob,noise_shape=None,seed=None,name=None)
         
-        self.logits = tf.layers.dense(dropout3, units=3, name='output')
+        self.logits = tf.layers.dense(dropout3, units=5, name='output')
         
         self.yhat = tf.nn.softmax(self.logits)
 
